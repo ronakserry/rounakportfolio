@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "shabnam", sans-serif;
+  --font-serif:"shabnam", serif;
+  --color-primary: #33658A;
+}
+
+html{
+  direction: rtl;
+  color: #141414;
+}
+
+body {
+  @apply bg-slate-100 dark:bg-gray-950;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+}
+
+.socialBG {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  min-height: 80px;
+  background-image: url("./assests/linkBG.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+
+.vueBG {
+  display: flex;
+  background-image: url("./assests/vue.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  height: 4rem !important;
+  width: 4rem !important;
+}
+
+.figmaBG{
+  display: flex;
+  background-image: url("./assests/figma.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  height: 4rem !important;
+  width: 4rem !important;
+}
+
+.reactBG{
+  display: flex;
+  background-image: url("./assests/react.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  height: 4rem !important;
+  width: 4rem !important;
+}
+
+.asepriteBG{
+  display: flex;
+  background-image: url("./assests/aseprite.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  height: 3.75rem !important;
+  width: 3.75rem !important;
+}
+
+.pythonBG{
+  display: flex;
+  background-image: url("./assests/python.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  height: 4rem !important;
+  width: 4rem !important;
+}
+
+.aiBG{  
+  display: flex;
+  background-image: url("./assests/ai.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  height: 4.35rem !important;
+  width: 4.35rem !important;
+}
+
+.modal-wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+input {
+  border-color: #141414;
+  border-radius: 2rem;
+}
+
+input:hover{
+  border-color: #33658A;
+}
